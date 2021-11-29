@@ -2,7 +2,7 @@ const init = async () => {
   const response = await fetch('/.netlify/functions/post')
   const data = await response.json();
   console.log(data);
-  const post = data.find((item) => item.caption.startsWith('#netlify'));
+  const post = data.find((item) => item.caption.startsWith('#car'));
 
   document.querySelector('.container').innerHTML = `
     <figure>
