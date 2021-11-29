@@ -4,12 +4,12 @@ const init = async () => {
   console.log(data);
   const post = data.find((item) => item.caption.startsWith('#netlify'));
 
-  /* document.querySelector('.container').innerHTML = `
+  document.querySelector('.container').innerHTML = `
     <figure>
       <img src="${post.url}" alt="test">
       <figcaption>${post.caption}</figcaption>
     </figure>
-  ` */
+  `
   console.log(post);
 }
 
